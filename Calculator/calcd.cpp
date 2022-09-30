@@ -18,7 +18,14 @@ Calcd::~Calcd()
 void Calcd::on_B1_clicked()
 {
     ui->LCDnumber->display(1);
+
 }
+
+void Calcd::on_B2_clicked()
+{
+    ui->LCDnumber->display(2);
+}
+
 
 
 void Calcd::on_B7_clicked()
@@ -27,8 +34,4 @@ void Calcd::on_B7_clicked()
 }
 
 
-void Calcd::on_B2_clicked()
-{
-    ui->LCDnumber->display(2);
-}
 

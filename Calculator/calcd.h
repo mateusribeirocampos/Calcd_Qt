@@ -20,7 +20,6 @@ private slots:
 
     void on_B7_clicked();
 
-
     void on_B2_clicked();
 
 private:
