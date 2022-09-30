@@ -15,6 +15,7 @@ public:
     Calcd(QWidget *parent = nullptr);
     ~Calcd();
 
+
 private slots:
     void on_B0_clicked();
 
@@ -40,7 +41,13 @@ private slots:
 
     void on_Bcomma_clicked();
 
-    void on_LCDnumber_overflow();
+    void on_Bplus_clicked();
+
+    void on_Bminus_clicked();
+
+    void on_Bmultiple_clicked();
+
+    void on_Bdivide_clicked();
 
 private:
     Ui::Calcd *ui;

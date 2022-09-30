@@ -74,9 +74,23 @@ void Calcd::on_Bcomma_clicked()
     ui->LCDnumber->display(",");
 }
 
-
-void Calcd::on_LCDnumber_overflow()
+void Calcd::on_Bplus_clicked()
 {
-    ui->LCDnumber->overflow();
+    ui->LCDnumber->display("+");
+}
+
+void Calcd::on_Bminus_clicked()
+{
+    ui->LCDnumber->display("-");
+}
+
+void Calcd::on_Bmultiple_clicked()
+{
+    ui->LCDnumber->display("*");
+}
+
+void Calcd::on_Bdivide_clicked()
+{
+    ui->LCDnumber->display("/");
 }
 
