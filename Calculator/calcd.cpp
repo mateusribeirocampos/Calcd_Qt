@@ -64,3 +64,19 @@ void Calcd::on_B9_clicked()
     ui->LCDnumber->display(9);
 }
 
+void Calcd::on_Bdot_clicked()
+{
+    ui->LCDnumber->display(".");
+}
+
+void Calcd::on_Bcomma_clicked()
+{
+    ui->LCDnumber->display(",");
+}
+
+
+void Calcd::on_LCDnumber_overflow()
+{
+    ui->LCDnumber->overflow();
+}
+

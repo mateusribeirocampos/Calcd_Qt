@@ -36,6 +36,12 @@ private slots:
 
     void on_B9_clicked();
 
+    void on_Bdot_clicked();
+
+    void on_Bcomma_clicked();
+
+    void on_LCDnumber_overflow();
+
 private:
     Ui::Calcd *ui;
 };
