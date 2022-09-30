@@ -17,37 +17,37 @@ public:
 
 
 private slots:
-    void on_B0_clicked();
+    void B0_clicked();
 
-    void on_B1_clicked();
+    void B1_clicked();
 
-    void on_B2_clicked();
+    void B2_clicked();
 
-    void on_B3_clicked();
+    void B3_clicked();
 
-    void on_B4_clicked();
+    void B4_clicked();
 
-    void on_B5_clicked();
+    void B5_clicked();
 
-    void on_B6_clicked();
+    void B6_clicked();
 
-    void on_B7_clicked();
+    void B7_clicked();
 
-    void on_B8_clicked();
+    void B8_clicked();
 
-    void on_B9_clicked();
+    void B9_clicked();
 
-    void on_Bdot_clicked();
+    void Bdot_clicked();
 
-    void on_Bcomma_clicked();
+    void Bcomma_clicked();
 
-    void on_Bplus_clicked();
+    void Bplus_clicked();
 
-    void on_Bminus_clicked();
+    void Bminus_clicked();
 
-    void on_Bmultiple_clicked();
+    void Bmultiple_clicked();
 
-    void on_Bdivide_clicked();
+    void Bdivide_clicked();
 
 private:
     Ui::Calcd *ui;
