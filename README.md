@@ -1,2 +1,2 @@
 # Calcd_Qt
-The first app in C++ with Qt program
+The first app in C++ with Qt framework
