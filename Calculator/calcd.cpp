@@ -14,6 +14,15 @@ Calcd::~Calcd()
     delete ui;
 }
 
+//Variable
+double valor1 = 0;
+double valor2 = 0;
+double resultado = 0;
+int contador_Decimal = 0;
+bool somar = 0;
+bool subtratir = 0;
+bool multiplicar = 0;
+bool dividir = 0;
 
 void Calcd::B1_clicked()
 {
@@ -72,7 +81,23 @@ void Calcd::Bcomma_clicked()
 
 void Calcd::Bplus_clicked()
 {
-    ui->LCDnumber->display('+');
+    if(somar ==1)
+    {
+        if (valor1 != NULL){
+            somar = valor1+valor2;
+        }
+        else
+        {
+            somar = resultado + valor2;
+        }
+
+        ui->LCDnumber->display(somar);
+        resultado = ui->LCDnumber->value();
+        somar = 0;
+        contador_Decimal = 0;
+        valor1 = NULL;
+        valor2 = 0;
+    }
 }
 
 void Calcd::Bminus_clicked()
@@ -90,22 +115,6 @@ void Calcd::Bdivide_clicked()
     ui->LCDnumber->display("/");
 }
 
-//Variable
-double valor1 = 0;
-double valor2 = 0;
-double valor3 = 0;
-double valor4 = 0;
-double valor5 = 0;
-double valor6 = 0;
-double valor7 = 0;
-double valor8 = 0;
-double valor9 = 0;
-double valor0 = 0;
-int contador_Decimal = 0;
-bool somar = 0;
-bool subtratir = 0;
-bool multiplicar = 0;
-bool dividir = 0;
 
 void Calcd::B0_clicked()
 {
