@@ -1,5 +1,6 @@
 #include "calcd.h"
 #include "ui_calcd.h"
+using namespace std;
 
 Calcd::Calcd(QWidget *parent)
     : QMainWindow(parent)
@@ -13,10 +14,6 @@ Calcd::~Calcd()
     delete ui;
 }
 
-void Calcd::B0_clicked()
-{
-    ui->LCDnumber->display(0);
-}
 
 void Calcd::B1_clicked()
 {
@@ -75,7 +72,7 @@ void Calcd::Bcomma_clicked()
 
 void Calcd::Bplus_clicked()
 {
-    ui->LCDnumber->display("+");
+    ui->LCDnumber->display('+');
 }
 
 void Calcd::Bminus_clicked()
@@ -91,5 +88,44 @@ void Calcd::Bmultiple_clicked()
 void Calcd::Bdivide_clicked()
 {
     ui->LCDnumber->display("/");
+}
+
+//Variable
+double valor1 = 0;
+double valor2 = 0;
+double valor3 = 0;
+double valor4 = 0;
+double valor5 = 0;
+double valor6 = 0;
+double valor7 = 0;
+double valor8 = 0;
+double valor9 = 0;
+double valor0 = 0;
+int contador_Decimal = 0;
+bool somar = 0;
+bool subtratir = 0;
+bool multiplicar = 0;
+bool dividir = 0;
+
+void Calcd::B0_clicked()
+{
+    if (contador_Decimal == 0)
+    {
+        if (somar == 0 && subtratir == 0)
+        {
+            valor1 = valor1*10+1;
+            ui->LCDnumber->display(valor1);
+        }
+        else
+        {
+            valor2 = valor2*10+1;
+            ui->LCDnumber->display(valor2);
+        }
+        if(somar == 0 && subtratir == 0){
+            valor1 = valor1 + 1/contador_Decimal;
+            ui->LCDnumber->display(valor1);
+            contador_Decimal = contador_Decimal*10;
+        }
+    }
 }
 
