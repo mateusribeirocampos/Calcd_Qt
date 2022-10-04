@@ -495,6 +495,110 @@ QPushButtonPressed{
       <height>351</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>36</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	background-color: DarkSlateGray;
+	border: 1px solid gray;
+	color: #ffffff;
+}</string>
+    </property>
+    <property name="text">
+     <string>0.00</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B9_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>20</y>
+      <width>75</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>36</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: #5F9EA0;
+	boder: 1px solid blue;
+	padding: 5px
+}
+</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B9_3">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>20</y>
+      <width>75</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>36</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: #5F9EA0;
+	boder: 1px solid blue;
+	padding: 5px
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Z</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B9_4">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>20</y>
+      <width>75</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>36</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: #5F9EA0;
+	boder: 1px solid blue;
+	padding: 5px
+}
+</string>
+    </property>
+    <property name="text">
+     <string>S</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
