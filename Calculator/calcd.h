@@ -3,8 +3,6 @@
 
 #include <QMainWindow>
 
-using namespace std; // namespace std;
-
 QT_BEGIN_NAMESPACE
 namespace Ui { class Calcd; }
 QT_END_NAMESPACE
@@ -50,8 +48,6 @@ private slots:
     void Bmultiple_clicked();
 
     void Bdivide_clicked();
-
-
 
 private:
     Ui::Calcd *ui;
