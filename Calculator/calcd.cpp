@@ -14,7 +14,7 @@ Calcd::Calcd(QWidget *parent)
 {
     ui->setupUi(this);
 
-    ui->Display->setText(QString::number(calval));
+    ui->lineEdit->setText(QString::number(calval));
     QPushButton*numButtons[10];
     for(int i = 0; i < 10; ++i){
         QString butName = "Button" + QString::number(i);
@@ -32,8 +32,15 @@ Calcd::~Calcd()
 void Calcd::NumPressed(){
     QPushButton*button = (QPushButton * )sender();
     QString butval = button->text();
-    QString displayval = ui->Display->text();
-    if((displayval.toDouble()==0)||(displayval.toDouble()==0.0));
+    QString displayval = ui->lineEdit->text();
+    if((displayval.toDouble()==0)||(displayval.toDouble()==0.0)){
+        ui->lineEdit->setText(butval);
+    }else{
+        QString newVal = displayval + butval;
+        double dbNewVal = newVal.toDouble();
+        ui->lineEdit->setText(QString::number(dbNewVal, 'g', 16));
+
+    }
 }
 
 

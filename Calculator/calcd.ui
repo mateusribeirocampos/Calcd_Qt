@@ -486,7 +486,7 @@ QPushButtonPressed{
      <string>/</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="Display">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -601,6 +601,7 @@ QPushButtonPressed{
     </property>
    </widget>
   </widget>
+  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -611,7 +612,6 @@ QPushButtonPressed{
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
