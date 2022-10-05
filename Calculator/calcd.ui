@@ -368,7 +368,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #5F9EA0;
+	background-color: #A0522D;
 	boder: 1px solid blue;
 	padding: 5px
 }
@@ -395,7 +395,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #5F9EA0;
+	background-color: #A0522D;
 	boder: 1px solid blue;
 	padding: 5px
 }
@@ -422,7 +422,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #5F9EA0;
+	background-color: #A0522D;
 	boder: 1px solid blue;
 	padding: 5px
 }
@@ -449,7 +449,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #5F9EA0;
+	background-color: #A0522D;
 	boder: 1px solid blue;
 	padding: 5px
 }
@@ -476,7 +476,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #5F9EA0;
+	background-color: #A0522D;
 	boder: 1px solid blue;
 	padding: 5px
 }
@@ -519,7 +519,7 @@ QPushButtonPressed{
      <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="B9_2">
+   <widget class="QPushButton" name="BMemory">
     <property name="geometry">
      <rect>
       <x>360</x>
@@ -536,7 +536,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #5F9EA0;
+	background-color: #A0522D;
 	boder: 1px solid blue;
 	padding: 5px
 }
@@ -546,7 +546,7 @@ QPushButtonPressed{
      <string>M</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="B9_3">
+   <widget class="QPushButton" name="BMemoryplus">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -563,7 +563,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #5F9EA0;
+	background-color: #A0522D;
 	boder: 1px solid blue;
 	padding: 5px
 }
@@ -573,7 +573,7 @@ QPushButtonPressed{
      <string>M+</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="B9_4">
+   <widget class="QPushButton" name="BMemoryClean">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -590,7 +590,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #5F9EA0;
+	background-color: #A0522D;
 	boder: 1px solid blue;
 	padding: 5px
 }

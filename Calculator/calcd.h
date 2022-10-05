@@ -18,5 +18,12 @@ public:
 
 private:
     Ui::Calcd *ui;
+
+private slots:
+    void NumPressed();
+    void MathButtonPressed();
+    void EqualButton();
+    void ChangeNumbersign();
+
 };
 #endif // CALCD_H
