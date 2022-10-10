@@ -370,7 +370,7 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: #A0522D;
 	boder: 1px solid blue;
-	padding: 5px
+	padding: 5px;
 }
 </string>
     </property>
@@ -538,7 +538,7 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: #A0522D;
 	boder: 1px solid blue;
-	padding: 5px
+	padding: 5px;
 }
 </string>
     </property>
@@ -565,7 +565,7 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: #A0522D;
 	boder: 1px solid blue;
-	padding: 5px
+	padding: 5px;
 }
 </string>
     </property>
@@ -592,7 +592,7 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: #A0522D;
 	boder: 1px solid blue;
-	padding: 5px
+	padding: 5px;
 }
 </string>
     </property>
