@@ -31,12 +31,12 @@ Calcd::~Calcd()
 
 void Calcd::NumPressed(){
     QPushButton*button = (QPushButton * )sender();
-    QString butval = button->text();
-    QString displayval = ui->Display->text();
-    if((displayval.toDouble()==0)||(displayval.toDouble()==0.0)){
-        ui->Display->setText(butval);
+    QString butVal = button->text();
+    QString displayVal = ui->Display->text();
+    if((displayVal.toDouble()== 0)||(displayVal.toDouble()== 0.0)){
+        ui->Display->setText(butVal);
     }else{
-        QString newVal = displayval + butval;
+        QString newVal = displayVal + butVal;
         double dbNewVal = newVal.toDouble();
         ui->Display->setText(QString::number(dbNewVal, 'g', 16));
 

@@ -21,9 +21,8 @@ private:
 
 private slots:
     void NumPressed();
-    void MathButtonPressed();
-    void EqualButton();
-    void ChangeNumbersign();
-
+    //void MathButtonPressed();
+    //void EqualButton();
+    //void ChangeNumberSign();
 };
 #endif // CALCD_H
