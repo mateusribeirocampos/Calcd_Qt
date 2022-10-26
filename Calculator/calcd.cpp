@@ -17,7 +17,7 @@ Calcd::Calcd(QWidget *parent)
     ui->Display->setText(QString::number(calVal));
     QPushButton *numButtons[10];
     for(int i = 0; i < 10; ++i){
-        QString butName = "Button" + QString::number(i);
+        QString butName = "Botton" + QString::number(i);
         numButtons[i] = Calcd::findChild<QPushButton*>(butName);
         connect(numButtons[i], SIGNAL(released()), this,
                 SLOT(NumPressed()));
@@ -30,10 +30,10 @@ Calcd::~Calcd()
 }
 
 void Calcd::NumPressed(){
-    QPushButton*button = (QPushButton *)sender();
+    QPushButton *button = (QPushButton *)sender();
     QString butVal = button->text();
     QString displayVal = ui->Display->text();
-    if((displayVal.toDouble()== 0)||(displayVal.toDouble()== 0.0)){
+    if((displayVal.toDouble() == 0)||(displayVal.toDouble() == 0.0)){
         ui->Display->setText(butVal);
     }else{
         QString newVal = displayVal + butVal;

@@ -27,7 +27,7 @@ QPushButtonPressed{
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="B7">
+   <widget class="QPushButton" name="Botton7">
     <property name="geometry">
      <rect>
       <x>360</x>
@@ -46,7 +46,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -54,7 +55,7 @@ QPushButtonPressed{
      <string>7</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="B8">
+   <widget class="QPushButton" name="Botton8">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -73,7 +74,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -81,7 +83,7 @@ QPushButtonPressed{
      <string>8</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="B9">
+   <widget class="QPushButton" name="Botton9">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -100,7 +102,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -108,7 +111,7 @@ QPushButtonPressed{
      <string>9</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="B0">
+   <widget class="QPushButton" name="Botton0">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -127,7 +130,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -135,7 +139,7 @@ QPushButtonPressed{
      <string>0</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="B6">
+   <widget class="QPushButton" name="Botton6">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -154,7 +158,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -162,7 +167,7 @@ QPushButtonPressed{
      <string>6</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="B5">
+   <widget class="QPushButton" name="Botton5">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -181,7 +186,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -189,7 +195,7 @@ QPushButtonPressed{
      <string>5</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="B4">
+   <widget class="QPushButton" name="Botton4">
     <property name="geometry">
      <rect>
       <x>360</x>
@@ -208,7 +214,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -216,7 +223,7 @@ QPushButtonPressed{
      <string>4</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="B1">
+   <widget class="QPushButton" name="Botton1">
     <property name="geometry">
      <rect>
       <x>360</x>
@@ -235,7 +242,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -243,7 +251,7 @@ QPushButtonPressed{
      <string>1</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="B2">
+   <widget class="QPushButton" name="Botton2">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -262,7 +270,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -270,7 +279,7 @@ QPushButtonPressed{
      <string>2</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="B3">
+   <widget class="QPushButton" name="Botton3">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -289,7 +298,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -297,7 +307,7 @@ QPushButtonPressed{
      <string>3</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bcomma">
+   <widget class="QPushButton" name="Equal">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -316,15 +326,16 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
     <property name="text">
-     <string>,</string>
+     <string>=</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bdot">
+   <widget class="QPushButton" name="Dot">
     <property name="geometry">
      <rect>
       <x>360</x>
@@ -343,7 +354,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -351,7 +363,7 @@ QPushButtonPressed{
      <string>.</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bclear">
+   <widget class="QPushButton" name="Clear">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -368,9 +380,16 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #A0522D;
+	background-color: #87502f;
 	boder: 1px solid blue;
+	color: #ffffff;
 	padding: 5px;
+}
+
+QPushbutton:pressed {
+	background-color: #A9A9A9;
+	border: 1px solid gray;
+	padding: 5px
 }
 </string>
     </property>
@@ -378,7 +397,7 @@ QPushButtonPressed{
      <string>AC</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bplus">
+   <widget class="QPushButton" name="Sum">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -397,7 +416,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -405,7 +425,7 @@ QPushButtonPressed{
      <string>+</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bminus">
+   <widget class="QPushButton" name="Subtract">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -424,7 +444,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -432,7 +453,7 @@ QPushButtonPressed{
      <string>-</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bmultiple">
+   <widget class="QPushButton" name="Multiple">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -451,7 +472,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -459,7 +481,7 @@ QPushButtonPressed{
      <string>*</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bdivide">
+   <widget class="QPushButton" name="Divide">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -478,7 +500,8 @@ QPushButtonPressed{
      <string notr="true">QPushButton{
 	background-color: DarkSlateGray;
 	boder: 1px solid blue;
-	padding: 5px
+	color: #ffffff;
+	padding: 5px;
 }
 </string>
     </property>
@@ -519,7 +542,7 @@ QPushButtonPressed{
      <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="BMemory">
+   <widget class="QPushButton" name="Memory">
     <property name="geometry">
      <rect>
       <x>360</x>
@@ -536,9 +559,16 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #A0522D;
+	background-color: #87502f;
 	boder: 1px solid blue;
+	color: #ffffff;
 	padding: 5px;
+}
+
+QPushbutton:pressed {
+	background-color: #A9A9A9;
+	border: 1px solid gray;
+	padding: 5px
 }
 </string>
     </property>
@@ -546,7 +576,7 @@ QPushButtonPressed{
      <string>M</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="BMemoryplus">
+   <widget class="QPushButton" name="MemoryAdd">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -563,9 +593,16 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #A0522D;
+	background-color: #87502f;
 	boder: 1px solid blue;
+	color: #ffffff;
 	padding: 5px;
+}
+
+QPushbutton:pressed {
+	background-color: #A9A9A9;
+	border: 1px solid gray;
+	padding: 5px
 }
 </string>
     </property>
@@ -573,7 +610,7 @@ QPushButtonPressed{
      <string>M+</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="BMemoryClean">
+   <widget class="QPushButton" name="MemoryClean">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -590,9 +627,16 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #A0522D;
+	background-color: #87502f;
 	boder: 1px solid blue;
+	color: #ffffff;
 	padding: 5px;
+}
+
+QPushbutton:pressed {
+	background-color: #A9A9A9;
+	border: 1px solid gray;
+	padding: 5px
 }
 </string>
     </property>

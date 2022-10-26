@@ -12,7 +12,7 @@ class Calcd : public QMainWindow
     Q_OBJECT
 
 public:
-    Calcd(QWidget *parent = nullptr);
+    explicit Calcd(QWidget *parent = 0);
     ~Calcd();
 
 

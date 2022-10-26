@@ -1,4 +1,5 @@
 #include "calcd.h"
+#include <QApplication>
 
 #include <QApplication>
 
