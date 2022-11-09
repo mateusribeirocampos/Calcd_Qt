@@ -15,13 +15,13 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QPushButton{
-	background-color: #5F9EA0;
+	background-color: #2F4F4F;
 	boder: 1px solid blue;
 	padding: 5px;
 }
 
 QPushButtonPressed{
-	background-color: #00 8B 8B;
+	background-color: #008B8B;
 	boder: 1px solid red;
 	padding:  5px;
 }</string>
@@ -44,7 +44,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -72,7 +72,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -100,7 +100,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -128,7 +128,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -156,7 +156,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -184,7 +184,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -212,7 +212,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -240,7 +240,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -268,7 +268,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -296,7 +296,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -324,7 +324,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -352,7 +352,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -380,7 +380,7 @@ QPushButtonPressed{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #87502f;
+	background-color: #D2691E;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -414,7 +414,7 @@ QPushbutton:pressed {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -442,7 +442,7 @@ QPushbutton:pressed {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -470,7 +470,7 @@ QPushbutton:pressed {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -498,7 +498,7 @@ QPushbutton:pressed {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: DarkSlateGray;
+	background-color: #808080;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -530,7 +530,7 @@ QPushbutton:pressed {
     </property>
     <property name="styleSheet">
      <string notr="true">QLineEdit {
-	background-color: DarkSlateGray;
+	background-color: #696969;
 	border: 1px solid gray;
 	color: #ffffff;
 }</string>
@@ -559,7 +559,7 @@ QPushbutton:pressed {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #87502f;
+	background-color: #D2691E;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -593,7 +593,7 @@ QPushbutton:pressed {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #87502f;
+	background-color: #D2691E;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
@@ -627,7 +627,7 @@ QPushbutton:pressed {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color: #87502f;
+	background-color: #D2691E;
 	boder: 1px solid blue;
 	color: #ffffff;
 	padding: 5px;
