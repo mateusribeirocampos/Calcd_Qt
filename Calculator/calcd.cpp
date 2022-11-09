@@ -43,4 +43,44 @@ void Calcd::NumPressed(){
     }
 }
 
+void Calcd::MathButtonPressed(){
+    divTrigger = false;
+    multTigger = false;
+    addTrigger = false;
+    subTrigger = false;
+    QString displayVal = ui->Display->text();
+    calVal = displayVal.toDouble();
+    QPushButton *button = (QPushButton *)sender();
+    QString butVal = button->text();
+    if(QString::compare(butVal, "/", Qt::CaseInsensitive) == 0){
+        divTrigger = true;
+    }else if(QString::compare(butVal, "*", Qt::CaseInsensitive) == 0){
+        multTigger = true;
+    }else if(QString::compare(butVal, "+", Qt::CaseInsensitive) == 0){
+        addTrigger = true;
+    }else {
+        subTrigger = true;
+    }
+    ui->Display->setText("");
+}
+
+void Calcd::EqualButton(){
+    double solution = 0.0;
+    QString displayVal = ui->Display->text();
+    double dblDisplayVal = displayVal.toDouble();
+    if(addTrigger || subTrigger || multTigger || divTrigger){
+        if(addTrigger){
+            solution = calVal + dblDisplayVal;
+        }else if(subTrigger){
+            solution = calVal - dblDisplayVal;
+        }else if(multTigger){
+            solution = calVal * dblDisplayVal;
+        }else {
+            solution = calVal / dblDisplayVal;
+        }
+    }
+    ui->Display->setText(QString::number(solution));
+}
+
+
 
