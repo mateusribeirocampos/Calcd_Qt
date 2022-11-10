@@ -47,8 +47,9 @@ Calcd::Calcd(QWidget *parent)
             SLOT(MathButtonPressed()));
     connect(ui->Multiple, SIGNAL(release()), this,
             SLOT(MathButtonPressed()));
+
     connect(ui->Equals, SIGNAL(release()), this,
-            SLOT(MathButtonPressed()));
+            SLOT(EqualButtonPressed()));
 }
 //destructor
 Calcd::~Calcd()
@@ -110,13 +111,18 @@ void Calcd::MathButtonPressed(){
         subTrigger = true;
     }
     //limpa o display
-    ui->Display->setText(" ");
+    ui->Display->setText("");
 }
 
-void Calcd::EqualButton(){
+void Calcd::EqualButtonPressed(){
+    //pega o novo calculo
     double solution = 0.0;
+
+    //pega o valor no display
     QString displayVal = ui->Display->text();
     double dblDisplayVal = displayVal.toDouble();
+
+    //assegura que o botão selecionado foi pressionado
     if(addTrigger || subTrigger || multTigger || divTrigger){
         if(addTrigger){
             solution = calVal + dblDisplayVal;
