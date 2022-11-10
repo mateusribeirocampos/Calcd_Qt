@@ -36,6 +36,12 @@ QPushButtonPressed{
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>28</pointsize>
@@ -63,6 +69,12 @@ QPushButtonPressed{
       <width>75</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -92,6 +104,12 @@ QPushButtonPressed{
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>28</pointsize>
@@ -119,6 +137,12 @@ QPushButtonPressed{
       <width>75</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -148,6 +172,12 @@ QPushButtonPressed{
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>28</pointsize>
@@ -175,6 +205,12 @@ QPushButtonPressed{
       <width>75</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -204,6 +240,12 @@ QPushButtonPressed{
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>28</pointsize>
@@ -231,6 +273,12 @@ QPushButtonPressed{
       <width>75</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -260,6 +308,12 @@ QPushButtonPressed{
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>28</pointsize>
@@ -287,6 +341,12 @@ QPushButtonPressed{
       <width>75</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -316,6 +376,12 @@ QPushButtonPressed{
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>28</pointsize>
@@ -344,6 +410,12 @@ QPushButtonPressed{
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>28</pointsize>
@@ -371,6 +443,12 @@ QPushButtonPressed{
       <width>75</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -406,6 +484,12 @@ QPushbutton:pressed {
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>28</pointsize>
@@ -433,6 +517,12 @@ QPushbutton:pressed {
       <width>75</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -462,6 +552,12 @@ QPushbutton:pressed {
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>28</pointsize>
@@ -490,6 +586,12 @@ QPushbutton:pressed {
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>28</pointsize>
@@ -512,7 +614,7 @@ QPushbutton:pressed {
    <widget class="QLineEdit" name="Display">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>10</y>
       <width>251</width>
       <height>351</height>
@@ -551,6 +653,12 @@ QPushbutton:pressed {
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>28</pointsize>
@@ -584,6 +692,12 @@ QPushbutton:pressed {
       <width>75</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -619,6 +733,12 @@ QPushbutton:pressed {
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>28</pointsize>
@@ -646,16 +766,6 @@ QPushbutton:pressed {
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>619</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
  </widget>
  <resources/>
  <connections/>
