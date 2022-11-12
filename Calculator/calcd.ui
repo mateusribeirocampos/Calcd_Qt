@@ -866,7 +866,7 @@ QPushbutton:pressed {
      <string>%</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="cubic">
+   <widget class="QPushButton" name="ChangeSignals">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -897,7 +897,7 @@ QPushbutton:pressed {
 </string>
     </property>
     <property name="text">
-     <string>x3</string>
+     <string>+/-</string>
     </property>
    </widget>
   </widget>
