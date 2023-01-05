@@ -3,7 +3,7 @@
 
 double calVal = 0.0;
 bool divTrigger = false;
-bool multTigger = false;
+bool multTrigger = false;
 bool addTrigger = false;
 bool subTrigger = false;
 bool ClearTrigger = false;
@@ -39,17 +39,18 @@ Calcd::Calcd(QWidget *parent)
                 SLOT(NumPressed()));
         }
     //Conexão dos sinais e slots para parear com os botões
-    connect(ui->Sum, SIGNAL(release()), this,
+    connect(ui->Sum, SIGNAL(clicked()), this,
             SLOT(MathButtonPressed()));
-    connect(ui->Subtract, SIGNAL(release()), this,
+    connect(ui->Subtract, SIGNAL(clicked()), this,
             SLOT(MathButtonPressed()));
-    connect(ui->Divide, SIGNAL(release()), this,
+    connect(ui->Divide, SIGNAL(clicked()), this,
             SLOT(MathButtonPressed()));
-    connect(ui->Multiple, SIGNAL(release()), this,
+    connect(ui->Multiple, SIGNAL(clicked()), this,
             SLOT(MathButtonPressed()));
-
-    connect(ui->Equals, SIGNAL(release()), this,
+    connect(ui->Equals, SIGNAL(clicked()), this,
             SLOT(EqualButtonPressed()));
+    connect(ui->Clear, SIGNAL(clicked()), this,
+            SLOT(ClearButton()));
 }
 //destructor
 Calcd::~Calcd()
@@ -66,12 +67,11 @@ void Calcd::NumPressed(){
 
     //pega o valor do display
     QString displayVal = ui->Display->text();
-    if((displayVal.toDouble() == 0)||(displayVal.toDouble() == 0.0)){
+    if((displayVal.toDouble() == 0)){
 
         //calVal = butVal.toDouble
         ui->Display->setText(butVal);
     }else{
-
         //Coloca o novo numero para o lugar certo
         QString newVal = displayVal + butVal;
 
@@ -87,10 +87,10 @@ void Calcd::NumPressed(){
 
 void Calcd::MathButtonPressed(){
     //cancela os botões previamente clicados
-    divTrigger = false;
-    multTigger = false;
-    addTrigger = false;
-    subTrigger = false;
+    divTrigger = true;
+    multTrigger = true;
+    addTrigger = true;
+    subTrigger = true;
 
     //armazena os valores atuais no display
     QString displayVal = ui->Display->text();
@@ -104,7 +104,7 @@ void Calcd::MathButtonPressed(){
     if(QString::compare(butVal, "/", Qt::CaseInsensitive) == 0){
         divTrigger = true;
     }else if(QString::compare(butVal, "*", Qt::CaseInsensitive) == 0){
-        multTigger = true;
+        multTrigger = true;
     }else if(QString::compare(butVal, "+", Qt::CaseInsensitive) == 0){
         addTrigger = true;
     }else {
@@ -123,12 +123,12 @@ void Calcd::EqualButtonPressed(){
     double dblDisplayVal = displayVal.toDouble();
 
     //assegura que o botão selecionado foi pressionado
-    if(addTrigger || subTrigger || multTigger || divTrigger){
+    if(addTrigger || subTrigger || multTrigger || divTrigger){
         if(addTrigger){
             solution = calVal + dblDisplayVal;
         }else if(subTrigger){
             solution = calVal - dblDisplayVal;
-        }else if(multTigger){
+        }else if(multTrigger){
             solution = calVal * dblDisplayVal;
         }else {
             solution = calVal / dblDisplayVal;
@@ -137,4 +137,6 @@ void Calcd::EqualButtonPressed(){
     ui->Display->setText(QString::number(solution));
 }
 
-
+void Calcd::ClearButton(){
+      ui->Display->setText("0");
+}

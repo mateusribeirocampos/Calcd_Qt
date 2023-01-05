@@ -23,6 +23,7 @@ private slots:
     void NumPressed();
     void MathButtonPressed();
     void EqualButtonPressed();
+    void ClearButton();
     //void ChangeNumberSign();
 
 };
