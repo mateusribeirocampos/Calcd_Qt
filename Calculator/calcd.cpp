@@ -1,5 +1,6 @@
 #include "calcd.h"
 #include "ui_calcd.h"
+#include <math.h>
 
 double calVal = 0.0;
 bool divTrigger = false;
@@ -53,6 +54,10 @@ Calcd::Calcd(QWidget *parent)
             SLOT(ClearButton()));
     connect(ui->Dot, SIGNAL(clicked()), this,
             SLOT(DotPress()));
+    connect(ui->SquareRoot, SIGNAL(clicked()), this,
+            SLOT(SquareRootPress()));
+    connect(ui->Square, SIGNAL(clicked()), this,
+            SLOT(SquarePress()));
 }
 //destructor
 Calcd::~Calcd()
@@ -154,3 +159,48 @@ void Calcd::DotPress(){
         ui->Display->setText(displayVal+".");
     }
 }
+
+void Calcd::SquareRootPress(){
+
+    // Obtém o valor atualmente exibido no display
+    QString displayVal = ui->Display->text();
+
+    // Verifica se o display está vazio
+    if (displayVal.isEmpty()) {
+        // Exibe uma mensagem de erro no display
+        ui->Display->setText("ERRO");
+        return;
+    }
+
+    // Converte o valor do display para o tipo double
+    double d = displayVal.toDouble();
+
+    // Calcula a raiz quadrada do valor
+    double result = sqrt(d);
+
+    // Atualiza o display com o resultado da raiz quadrada
+    ui->Display->setText(QString::number(result));
+}
+
+void Calcd::SquarePress(){
+
+    // Obtém o valor atualmente exibido no display
+    QString displayVal = ui->Display->text();
+
+    // Verifica se o display está vazio
+    if (displayVal.isEmpty()) {
+        // Exibe uma mensagem de erro no display
+        ui->Display->setText("ERRO");
+        return;
+    }
+
+    // Converte o valor do display para o tipo double
+    double d = displayVal.toDouble();
+
+    // Calcula o quadrado do valor fornecido
+    double result = d * d;
+
+    // Atualiza o display com o resultado da raiz quadrada
+    ui->Display->setText(QString::number(result));
+}
+

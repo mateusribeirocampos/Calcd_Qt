@@ -401,7 +401,7 @@ QPushButtonPressed{
      <string>=</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="SqaureRoot">
+   <widget class="QPushButton" name="SquareRoot">
     <property name="geometry">
      <rect>
       <x>330</x>

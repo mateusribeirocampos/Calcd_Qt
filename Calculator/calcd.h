@@ -25,6 +25,8 @@ private slots:
     void EqualButtonPressed();
     void ClearButton();
     void DotPress();
+    void SquareRootPress();
+    void SquarePress();
     //void ChangeNumberSign();
 
 };
