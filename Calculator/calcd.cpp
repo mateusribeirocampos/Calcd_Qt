@@ -37,7 +37,7 @@ Calcd::Calcd(QWidget *parent)
         //quando o botão é liberado chama num_pressed()
         connect(numButtons[i], SIGNAL(released()), this,
                 SLOT(NumPressed()));
-        }
+    }
     //Conexão dos sinais e slots para parear com os botões
     connect(ui->Sum, SIGNAL(clicked()), this,
             SLOT(MathButtonPressed()));
