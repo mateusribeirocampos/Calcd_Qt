@@ -144,8 +144,13 @@ void Calcd::ClearButton(){
 }
 
 void Calcd::DotPress(){
+    // pega o valor atual do display
     QString displayVal = ui->Display->text();
+
+    // verifica se o ponto já foi adicionado
     if(!displayVal.contains(".")) {
+
+        // adiciona o ponto ao final do valor atual do display
         ui->Display->setText(displayVal+".");
     }
 }
