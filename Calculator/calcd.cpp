@@ -51,6 +51,8 @@ Calcd::Calcd(QWidget *parent)
             SLOT(EqualButtonPressed()));
     connect(ui->Clear, SIGNAL(clicked()), this,
             SLOT(ClearButton()));
+    connect(ui->Dot, SIGNAL(clicked()), this,
+            SLOT(DotPress()));
 }
 //destructor
 Calcd::~Calcd()
@@ -87,10 +89,10 @@ void Calcd::NumPressed(){
 
 void Calcd::MathButtonPressed(){
     //cancela os botões previamente clicados
-    divTrigger = true;
-    multTrigger = true;
-    addTrigger = true;
-    subTrigger = true;
+    divTrigger = false;
+    multTrigger = false;
+    addTrigger = false;
+    subTrigger = false;
 
     //armazena os valores atuais no display
     QString displayVal = ui->Display->text();
@@ -138,5 +140,12 @@ void Calcd::EqualButtonPressed(){
 }
 
 void Calcd::ClearButton(){
-      ui->Display->setText("0");
+    ui->Display->setText("0");
+}
+
+void Calcd::DotPress(){
+    QString displayVal = ui->Display->text();
+    if(!displayVal.contains(".")) {
+        ui->Display->setText(displayVal+".");
+    }
 }
