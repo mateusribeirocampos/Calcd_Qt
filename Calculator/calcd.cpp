@@ -134,6 +134,7 @@ void Calcd::MathButtonPressed(){
 }
 
 void Calcd::EqualButtonPressed(){
+
     //pega o novo calculo
     double solution = 0.0;
 
