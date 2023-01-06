@@ -27,7 +27,8 @@ private slots:
     void DotPress();
     void SquareRootPress();
     void SquarePress();
-    //void ChangeNumberSign();
+    void PercentagePress();
+    void ChangeNumberSign();
 
 };
 #endif // CALCD_H

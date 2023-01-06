@@ -58,6 +58,10 @@ Calcd::Calcd(QWidget *parent)
             SLOT(SquareRootPress()));
     connect(ui->Square, SIGNAL(clicked()), this,
             SLOT(SquarePress()));
+    connect(ui->Percentage, SIGNAL(clicked()), this,
+            SLOT(PercentagePress()));
+    connect(ui->ChangeSignals, SIGNAL(clicked()), this,
+            SLOT(ChangeNumberSign()));
 }
 //destructor
 Calcd::~Calcd()
@@ -144,6 +148,20 @@ void Calcd::EqualButtonPressed(){
     ui->Display->setText(QString::number(solution));
 }
 
+void Calcd::ChangeNumberSign(){
+    // Obtém o valor atualmente exibido no display
+    QString displayVal = ui->Display->text();
+
+    // Converte o valor do display para o tipo double
+    double d = displayVal.toDouble();
+
+    // inverte o valor multiplicando o valor no display por -1
+    double result = d * -1;
+
+    // Atualiza o display com o resultado da raiz quadrada
+    ui->Display->setText(QString::number(result));
+}
+
 void Calcd::ClearButton(){
     ui->Display->setText("0");
 }
@@ -187,6 +205,21 @@ void Calcd::SquarePress(){
     // Obtém o valor atualmente exibido no display
     QString displayVal = ui->Display->text();
 
+    // Converte o valor do display para o tipo double
+    double d = displayVal.toDouble();
+
+    // Calcula o quadrado do valor fornecido
+    double result = d * d;
+
+    // Atualiza o display com o resultado da raiz quadrada
+    ui->Display->setText(QString::number(result));
+}
+
+void Calcd::PercentagePress(){
+
+    // Obtém o valor atualmente exibido no display
+    QString displayVal = ui->Display->text();
+
     // Verifica se o display está vazio
     if (displayVal.isEmpty()) {
         // Exibe uma mensagem de erro no display
@@ -197,8 +230,8 @@ void Calcd::SquarePress(){
     // Converte o valor do display para o tipo double
     double d = displayVal.toDouble();
 
-    // Calcula o quadrado do valor fornecido
-    double result = d * d;
+    // fornece a porcentagem do numero fornecido
+    double result = d /100;
 
     // Atualiza o display com o resultado da raiz quadrada
     ui->Display->setText(QString::number(result));
