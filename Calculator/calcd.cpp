@@ -78,7 +78,14 @@ void Calcd::NumPressed(){
 
     //pega o valor do display
     QString displayVal = ui->Display->text();
-    if((displayVal.toDouble() == 0)){
+    if((displayVal.isEmpty() || displayVal == "0")) {
+
+        if (displayVal == "0" && butVal == ".") {
+            // O display só possui o valor 0, então o usuário está tentando inserir um ponto decimal
+            // Nesse caso, basta atualizar o display para "0."
+            ui->Display->setText("0.");
+            return;
+        }
 
         //calVal = butVal.toDouble
         ui->Display->setText(butVal);
@@ -92,9 +99,10 @@ void Calcd::NumPressed(){
         //calVal = newVal.toDouble();
         //configura valor no display e permite mais de 16 caracteres
         //digitos antes usando exponencial
-        ui->Display->setText(QString::number(dbNewVal, 'g', 5));
+        ui->Display->setText(QString::number(dbNewVal, 'g', 7));
     }
 }
+
 
 void Calcd::MathButtonPressed(){
     //cancela os botões previamente clicados
