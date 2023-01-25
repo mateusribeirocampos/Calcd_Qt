@@ -3,6 +3,7 @@
 #include <math.h>
 
 double calVal = 0.0;
+double memoryVal = 0.0;
 bool divTrigger = false;
 bool multTrigger = false;
 bool addTrigger = false;
@@ -62,6 +63,8 @@ Calcd::Calcd(QWidget *parent)
             SLOT(PercentagePress()));
     connect(ui->ChangeSignals, SIGNAL(clicked()), this,
             SLOT(ChangeNumberSign()));
+    connect(ui->Memory, SIGNAL(clicked()), this,
+            SLOT(memory()));
 }
 //destructor
 Calcd::~Calcd()
@@ -244,5 +247,22 @@ void Calcd::PercentagePress(){
 
     // Atualiza o display com o resultado da raiz quadrada
     ui->Display->setText(QString::number(result));
+}
+
+void Calcd::memory(){
+    QString displayVal = ui->Display->text();
+
+    // Verifica se o display está vazio
+    if (displayVal.isEmpty()) {
+        // Exibe uma mensagem de erro no display
+        ui->Display->setText("ERRO");
+        return;
+    }
+    //pega o valor atual do display
+    memoryVal = displayVal.toDouble();
+}
+
+void Calcd::RecallMemory(){
+    ui->Display->setText(QString::number(memoryVal));
 }
 
