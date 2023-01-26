@@ -69,7 +69,7 @@ Calcd::Calcd(QWidget *parent)
             SLOT(RecallMemory()));
     connect(ui->MemoryClean, SIGNAL(clicked()), this,
             SLOT(Memoryclean()));
-    connect(ui->MemorySub, SIGNAL(clicked), this,
+    connect(ui->MemorySub, SIGNAL(clicked()), this,
             SLOT(MemorySubtract()));
 }
 //destructor
@@ -266,31 +266,50 @@ void Calcd::MemoryAdd(){
     }
 
     if(memoryVal != 0){
-        //pega o valor atual do display
+        //pega o valor atual do display e incrementa
         memoryVal += displayVal.toDouble();
     }else {
         memoryVal = displayVal.toDouble();
     }
 }
 
+//Função para chamar o valor que está armazenado na memória
 void Calcd::RecallMemory(){
     ui->Display->setText(QString::number(memoryVal));
 }
 
+//Função para limpar a memória
 void Calcd::Memoryclean(){
     memoryVal = 0.0;
 }
 
 void Calcd::MemorySubtract(){
+    // Pega o valor atual no display
     QString displayVal = ui->Display->text();
 
-    // Verifica se o display está vazio
+    // Verifica se o display está vazio, se sim, exibe mensagem de erro e sai da função
     if (displayVal.isEmpty()) {
         // Exibe uma mensagem de erro no display
         ui->Display->setText("ERRO");
         return;
     }
 
-    memoryVal = memoryVal - displayVal.toDouble();
+    // Converte o valor do display para double
+    double currentValue = displayVal.toDouble();
+
+    // Verifica se já existe um valor na memória, se sim, subtrai o valor atual do display
+    if(memoryVal != 0){
+        memoryVal -= currentValue;
+    }else{
+        // Se não, atribui o valor negativo do display como valor na memória
+        memoryVal = -currentValue;
+    }
+    //Imprime na tela de debug
+    qDebug() << "MemorySubtract called";
+    //Atualiza o display com o valor na memória
+    ui->Display->setText(QString::number(memoryVal));
 }
+
+
+
 
