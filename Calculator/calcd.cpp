@@ -63,8 +63,8 @@ Calcd::Calcd(QWidget *parent)
             SLOT(PercentagePress()));
     connect(ui->ChangeSignals, SIGNAL(clicked()), this,
             SLOT(ChangeNumberSign()));
-    connect(ui->Memory, SIGNAL(clicked()), this,
-            SLOT(memory()));
+    connect(ui->MemoryRecall, SIGNAL(clicked()), this,
+            SLOT(RecallMemory()));
 }
 //destructor
 Calcd::~Calcd()
