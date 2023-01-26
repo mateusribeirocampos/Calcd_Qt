@@ -29,10 +29,10 @@ private slots:
     void SquarePress();
     void PercentagePress();
     void ChangeNumberSign();
-    void memory();
+    void MemoryAdd();
     void RecallMemory();
-    //void memoryclean();
-    //void memoryadd();
+    void Memoryclean();
+    void MemorySubtract();
 
 };
 #endif // CALCD_H

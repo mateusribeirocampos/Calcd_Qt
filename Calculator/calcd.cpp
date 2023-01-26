@@ -63,8 +63,14 @@ Calcd::Calcd(QWidget *parent)
             SLOT(PercentagePress()));
     connect(ui->ChangeSignals, SIGNAL(clicked()), this,
             SLOT(ChangeNumberSign()));
+    connect(ui->MemoryAdd, SIGNAL(clicked()), this,
+            SLOT(MemoryAdd()));
     connect(ui->MemoryRecall, SIGNAL(clicked()), this,
             SLOT(RecallMemory()));
+    connect(ui->MemoryClean, SIGNAL(clicked()), this,
+            SLOT(Memoryclean()));
+    connect(ui->MemorySub, SIGNAL(clicked), this,
+            SLOT(MemorySubtract()));
 }
 //destructor
 Calcd::~Calcd()
@@ -249,7 +255,7 @@ void Calcd::PercentagePress(){
     ui->Display->setText(QString::number(result));
 }
 
-void Calcd::memory(){
+void Calcd::MemoryAdd(){
     QString displayVal = ui->Display->text();
 
     // Verifica se o display está vazio
@@ -258,11 +264,33 @@ void Calcd::memory(){
         ui->Display->setText("ERRO");
         return;
     }
-    //pega o valor atual do display
-    memoryVal = displayVal.toDouble();
+
+    if(memoryVal != 0){
+        //pega o valor atual do display
+        memoryVal += displayVal.toDouble();
+    }else {
+        memoryVal = displayVal.toDouble();
+    }
 }
 
 void Calcd::RecallMemory(){
     ui->Display->setText(QString::number(memoryVal));
+}
+
+void Calcd::Memoryclean(){
+    memoryVal = 0.0;
+}
+
+void Calcd::MemorySubtract(){
+    QString displayVal = ui->Display->text();
+
+    // Verifica se o display está vazio
+    if (displayVal.isEmpty()) {
+        // Exibe uma mensagem de erro no display
+        ui->Display->setText("ERRO");
+        return;
+    }
+
+    memoryVal = memoryVal - displayVal.toDouble();
 }
 
