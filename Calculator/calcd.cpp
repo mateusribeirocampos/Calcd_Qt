@@ -71,6 +71,12 @@ Calcd::Calcd(QWidget *parent)
             SLOT(Memoryclean()));
     connect(ui->MemorySub, SIGNAL(clicked()), this,
             SLOT(MemorySubtract()));
+    connect(ui->log, SIGNAL(clicked()), this,
+            SLOT(LogaritmPress()));
+    connect(ui->pi, SIGNAL(clicked()), this,
+            SLOT(PiPress()));
+    connect(ui->exponential, SIGNAL(clicked()), this,
+            SLOT(ExponetialPress()));
 }
 //destructor
 Calcd::~Calcd()
@@ -310,6 +316,37 @@ void Calcd::MemorySubtract(){
     ui->Display->setText(QString::number(memoryVal));
 }
 
+void Calcd::LogaritmPress(){
+
+    // Obtém o valor atualmente exibido no display
+    QString displayVal = ui->Display->text();
+
+    // Verifica se o display está vazio
+    if (displayVal.isEmpty()) {
+        // Exibe uma mensagem de erro no display
+        ui->Display->setText("ERRO");
+        return;
+    }
+
+    // Converte o valor do display para o tipo double
+    double Lg = displayVal.toDouble();
+
+    // Calcula o logaritmo do valor
+    double result = log10(Lg);
+
+    // Atualiza o display com o resultado do logaritmo
+    ui->Display->setText(QString::number(result));
+}
+
+void Calcd::PiPress(){
+    // Atualiza o display com o resultado do logaritmo
+    ui->Display->setText(QString::number(M_PI));
+}
+
+void Calcd::ExponetialPress(){
+    // Atualiza o display com o resultado do logaritmo
+    ui->Display->setText(QString::number(M_E));
+}
 
 
 

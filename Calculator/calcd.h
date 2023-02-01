@@ -33,6 +33,9 @@ private slots:
     void RecallMemory();
     void Memoryclean();
     void MemorySubtract();
+    void LogaritmPress();
+    void PiPress();
+    void ExponetialPress();
 
 };
 #endif // CALCD_H
