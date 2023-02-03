@@ -4,7 +4,7 @@ The calculator was a personal project to build the calculator from the Qt framew
 
 ![this a image](https://github.com/mateusribeirocampos/Calcd_Qt/blob/main/images/Calcd.PNG)
 ## Resources
-### Calcd - A Simple Calculator
+### Calcd - A Simple Calculator ![this a image]()
 This is a simple calculator that gives you the necessary commands to perform simple calculations using the following operators:
 
 - Sum: `+`
